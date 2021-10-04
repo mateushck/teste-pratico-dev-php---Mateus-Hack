@@ -68,3 +68,11 @@ Caso ainda não tenha se cadastrado, acesse https://app.pipefy.com/public/form/c
 Neste vídeo ensina como você pode fazer o Fork do nosso repositório e entregar com o push request. https://youtu.be/gJCwWlB3XX0
 
 # Sucesso!!!!
+
+
+
+OBSERVAÇÕES:
+
+Fiz o solicitado em Laravel.
+Básicamente, ele lê o arquivo, separa em linhas, essas linhas em um array, e faz a inclusão no banco desde que os dados sejam válidos.
+Seguindo a descrição pelo enunciado do teste, não vejo grandes maneiras de se aumentar a performace, já que a execução está no cliente. Eu particularmente (não sei se seria a melhor solução), subiria esse arquivo para o servidor num filesystem, e executaria isso e threads dentro do servidor gerando mais performace. Mas não tive tempo para estudar a implementação desta forma.
