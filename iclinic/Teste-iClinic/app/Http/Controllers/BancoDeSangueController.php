@@ -61,8 +61,8 @@ class BancoDeSangueController extends Controller
             'cep' => 'max:9|string',
             'estado' => 'max:2|string',
         ];
-        //"/mnt/c/Users/Usuário/desafio-iClinic/iclinic/Teste-iClinic/public/../../../pacientes2.csv"
-        $file = public_path('../../../pacientes2.csv');
+        
+        $file = public_path('../../../pacientes.csv');
        
         $customerArr = $this->csvToArray($file);
         $paciente = new \App\Models\Paciente;
